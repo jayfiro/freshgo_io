@@ -1,0 +1,209 @@
+/* ===========================================================
+   FreshGo Design System · Colors + Type
+   ===========================================================
+   Import with:
+     <link rel="stylesheet" href="colors_and_type.css">
+   Fonts: Nunito (display/UI) + Inter (body) — Google Fonts
+   =========================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  /* ---------- Brand core ---------- */
+  --fg-watermelon:   #E24A52;  /* primary red — "Fresh" */
+  --fg-watermelon-ink: #B8343B;
+  --fg-watermelon-50:  #FDECEC;
+  --fg-watermelon-100: #FBD6D8;
+  --fg-watermelon-200: #F5A8AC;
+  --fg-watermelon-300: #EE7C82;
+  --fg-watermelon-400: #E86067;
+  --fg-watermelon-500: #E24A52;
+  --fg-watermelon-600: #CC3740;
+  --fg-watermelon-700: #A82A32;
+  --fg-watermelon-800: #7F2026;
+  --fg-watermelon-900: #551519;
+
+  --fg-leaf:         #2FC27A;  /* primary green — "Go" */
+  --fg-leaf-ink:     #1E8F57;
+  --fg-leaf-50:      #E6FAF0;
+  --fg-leaf-100:     #C3F2D9;
+  --fg-leaf-200:     #8AE6B6;
+  --fg-leaf-300:     #55D893;
+  --fg-leaf-400:     #3ECC84;
+  --fg-leaf-500:     #2FC27A;
+  --fg-leaf-600:     #22A866;
+  --fg-leaf-700:     #1A8852;
+  --fg-leaf-800:     #14663E;
+  --fg-leaf-900:     #0D4429;
+
+  /* ---------- Secondary fruit palette ---------- */
+  --fg-mango:        #F5A524;  /* warm accents, deals, ripe badges */
+  --fg-mango-50:     #FEF4E0;
+  --fg-mango-100:    #FCE4B3;
+  --fg-dragonfruit:  #E05D9F;  /* playful accent */
+  --fg-dragonfruit-50: #FCE9F2;
+  --fg-longan:       #C9A878;  /* natural/kraft accent */
+  --fg-longan-50:    #F5EEE3;
+
+  /* ---------- Neutrals (warm-leaning, slightly green cast) ---------- */
+  --fg-ink:          #1B2420;  /* text, "freshly inked" near-black */
+  --fg-slate-900:    #1B2420;
+  --fg-slate-800:    #2E3A34;
+  --fg-slate-700:    #465049;
+  --fg-slate-600:    #64716A;
+  --fg-slate-500:    #8A958F;
+  --fg-slate-400:    #B3BDB7;
+  --fg-slate-300:    #D4DBD6;
+  --fg-slate-200:    #E6EAE7;
+  --fg-slate-100:    #F1F4F2;
+  --fg-slate-50:     #F8FAF8;
+  --fg-white:        #FFFFFF;
+  --fg-cream:        #FBF8F1;  /* warm paper background */
+
+  /* ---------- Semantic ---------- */
+  --color-bg:               var(--fg-cream);
+  --color-bg-elevated:      var(--fg-white);
+  --color-bg-subtle:        var(--fg-slate-50);
+  --color-bg-muted:         var(--fg-slate-100);
+  --color-bg-inverse:       var(--fg-slate-900);
+
+  --color-fg-1:             var(--fg-slate-900); /* primary text */
+  --color-fg-2:             var(--fg-slate-700); /* secondary text */
+  --color-fg-3:             var(--fg-slate-600); /* tertiary / captions */
+  --color-fg-4:             var(--fg-slate-500); /* placeholder / disabled */
+  --color-fg-inverse:       var(--fg-white);
+
+  --color-border:           var(--fg-slate-200);
+  --color-border-strong:    var(--fg-slate-300);
+  --color-border-focus:     var(--fg-leaf-500);
+
+  --color-primary:          var(--fg-leaf-500);   /* primary CTA = "Go" green */
+  --color-primary-hover:    var(--fg-leaf-600);
+  --color-primary-press:    var(--fg-leaf-700);
+  --color-primary-fg:       var(--fg-white);
+  --color-primary-tint:     var(--fg-leaf-50);
+
+  --color-accent:           var(--fg-watermelon-500); /* brand red — used sparingly */
+  --color-accent-hover:     var(--fg-watermelon-600);
+  --color-accent-fg:        var(--fg-white);
+  --color-accent-tint:      var(--fg-watermelon-50);
+
+  --color-success:          var(--fg-leaf-600);
+  --color-success-tint:     var(--fg-leaf-50);
+  --color-warning:          var(--fg-mango);
+  --color-warning-tint:     var(--fg-mango-50);
+  --color-danger:           var(--fg-watermelon-600);
+  --color-danger-tint:      var(--fg-watermelon-50);
+  --color-info:             #3D8BD4;
+  --color-info-tint:        #E7F1FB;
+
+  /* ---------- Typography ---------- */
+  --font-display: "Nunito", "Quicksand", ui-rounded, system-ui, sans-serif;
+  --font-body:    "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-cjk:     "Noto Sans SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", system-ui, sans-serif;
+  --font-mono:    "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+
+  --fw-regular: 400;
+  --fw-medium:  500;
+  --fw-semibold: 600;
+  --fw-bold:    700;
+  --fw-extrabold: 800;
+  --fw-black:   900;
+
+  /* Type scale (rem; base 16px) */
+  --fs-display-xl: 4.5rem;   /* 72 */
+  --fs-display-lg: 3.5rem;   /* 56 */
+  --fs-display-md: 2.75rem;  /* 44 */
+  --fs-h1:         2.25rem;  /* 36 */
+  --fs-h2:         1.75rem;  /* 28 */
+  --fs-h3:         1.375rem; /* 22 */
+  --fs-h4:         1.125rem; /* 18 */
+  --fs-body-lg:    1.0625rem;/* 17 */
+  --fs-body:       1rem;     /* 16 */
+  --fs-body-sm:    0.875rem; /* 14 */
+  --fs-caption:    0.75rem;  /* 12 */
+
+  --lh-tight:   1.05;
+  --lh-snug:    1.2;
+  --lh-normal:  1.5;
+  --lh-relaxed: 1.65;
+
+  --tracking-tight:  -0.02em;
+  --tracking-normal: 0;
+  --tracking-wide:   0.04em;
+  --tracking-caps:   0.08em;
+
+  /* ---------- Spacing ---------- */
+  --space-0:  0;
+  --space-1:  0.25rem;  /* 4  */
+  --space-2:  0.5rem;   /* 8  */
+  --space-3:  0.75rem;  /* 12 */
+  --space-4:  1rem;     /* 16 */
+  --space-5:  1.25rem;  /* 20 */
+  --space-6:  1.5rem;   /* 24 */
+  --space-8:  2rem;     /* 32 */
+  --space-10: 2.5rem;   /* 40 */
+  --space-12: 3rem;     /* 48 */
+  --space-16: 4rem;     /* 64 */
+  --space-20: 5rem;     /* 80 */
+  --space-24: 6rem;     /* 96 */
+
+  /* ---------- Radii — friendly, rounded but never blobby ---------- */
+  --radius-xs:   4px;
+  --radius-sm:   8px;
+  --radius-md:   12px;
+  --radius-lg:   18px;
+  --radius-xl:   24px;
+  --radius-2xl:  32px;
+  --radius-pill: 999px;
+
+  /* ---------- Shadows (warm, low, produce-stand-feel) ---------- */
+  --shadow-xs: 0 1px 2px rgba(27, 36, 32, 0.06);
+  --shadow-sm: 0 2px 6px rgba(27, 36, 32, 0.06), 0 1px 2px rgba(27, 36, 32, 0.04);
+  --shadow-md: 0 8px 20px -6px rgba(27, 36, 32, 0.10), 0 2px 6px rgba(27, 36, 32, 0.05);
+  --shadow-lg: 0 18px 40px -14px rgba(27, 36, 32, 0.18), 0 4px 10px rgba(27, 36, 32, 0.05);
+  --shadow-xl: 0 32px 60px -20px rgba(27, 36, 32, 0.22);
+  --shadow-focus: 0 0 0 4px rgba(47, 194, 122, 0.25);
+  --shadow-focus-red: 0 0 0 4px rgba(226, 74, 82, 0.22);
+
+  /* ---------- Motion ---------- */
+  --ease-out:    cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in:     cubic-bezier(0.55, 0, 0.45, 0);
+  --ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --dur-fast:   120ms;
+  --dur-base:   200ms;
+  --dur-slow:   360ms;
+}
+
+/* =======================================================
+   Semantic defaults — opt in by using these classes/tags
+   ======================================================= */
+html { font-family: var(--font-body); color: var(--color-fg-1); background: var(--color-bg); -webkit-font-smoothing: antialiased; }
+body { font-size: var(--fs-body); line-height: var(--lh-normal); }
+
+.font-display { font-family: var(--font-display); }
+.font-mono    { font-family: var(--font-mono); }
+
+h1, .h1 { font-family: var(--font-display); font-weight: var(--fw-extrabold); font-size: var(--fs-h1); line-height: var(--lh-snug); letter-spacing: var(--tracking-tight); color: var(--color-fg-1); }
+h2, .h2 { font-family: var(--font-display); font-weight: var(--fw-extrabold); font-size: var(--fs-h2); line-height: var(--lh-snug); letter-spacing: var(--tracking-tight); color: var(--color-fg-1); }
+h3, .h3 { font-family: var(--font-display); font-weight: var(--fw-bold);      font-size: var(--fs-h3); line-height: var(--lh-snug); color: var(--color-fg-1); }
+h4, .h4 { font-family: var(--font-display); font-weight: var(--fw-bold);      font-size: var(--fs-h4); line-height: var(--lh-snug); color: var(--color-fg-1); }
+
+.display-xl { font-family: var(--font-display); font-weight: var(--fw-black); font-size: var(--fs-display-xl); line-height: var(--lh-tight); letter-spacing: -0.03em; }
+.display-lg { font-family: var(--font-display); font-weight: var(--fw-black); font-size: var(--fs-display-lg); line-height: var(--lh-tight); letter-spacing: -0.025em; }
+.display-md { font-family: var(--font-display); font-weight: var(--fw-extrabold); font-size: var(--fs-display-md); line-height: var(--lh-tight); letter-spacing: -0.02em; }
+
+p, .body { font-size: var(--fs-body); line-height: var(--lh-relaxed); color: var(--color-fg-2); }
+.body-lg  { font-size: var(--fs-body-lg); line-height: var(--lh-relaxed); }
+.body-sm  { font-size: var(--fs-body-sm); line-height: var(--lh-normal); color: var(--color-fg-2); }
+.caption  { font-size: var(--fs-caption); line-height: var(--lh-normal); color: var(--color-fg-3); }
+.eyebrow  { font-family: var(--font-display); font-weight: var(--fw-bold); font-size: var(--fs-caption); letter-spacing: var(--tracking-caps); text-transform: uppercase; color: var(--color-primary); }
+
+code, kbd, samp, pre, .code { font-family: var(--font-mono); font-size: 0.92em; }
+
+/* Branded link */
+a { color: var(--color-primary); text-decoration: none; }
+a:hover { color: var(--color-primary-hover); text-decoration: underline; text-underline-offset: 3px; }
+
+/* Focus ring */
+:focus-visible { outline: none; box-shadow: var(--shadow-focus); border-radius: var(--radius-sm); }
